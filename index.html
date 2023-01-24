@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        h1,p{
+            text-align: center;
+           
+        }
+        .container{
+            width:360px;
+            height:450px;
+            margin:4% auto;
+            background: rgb(218, 216, 216);
+            border: radius ; 
+            position: relative;
+            padding:4%
+            
+        }
+        #button{
+            background-color: green;
+            width: 98%;
+            color: white;
+            border-style: none;
+            padding: 10px;
+            font-size: 15px;
+        }
+        span{
+            color: green;
+        }
+        #fname,#lname,#email,#password {
+            padding: 8px;
+            
+        }
+       h4{
+        color: white;
+        text-align: center;
+       }
+       .name{
+        display: flex;
+       justify-content: space-around;
+        }
+        #fname,#lname{
+            width:42%;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/action_page.php">
+            <h1 style="margin:0%"><b>Register</b></h1>
+            <p>Create your account.it's free and only takes a minute</p>
+            <br>
+           <div class="name" >
+             <label for="first name"></label>
+            <input type="text" placeholder="First Name" id="fname" value=""><br>
+          <label for="last name"></label>
+            <input type="text" placeholder="Last Name" id="lname" value=""></div>
+            <br>
+            <label for="email"></label>
+            <input type="email" placeholder="Email" id="email" value="" style="width: 95%;" >
+            <br>
+            <br>
+            <label for="password"></label>
+            <input type="password" placeholder="Password" id="password" value="" style="width: 95%;" >
+            <br>
+            <br>
+            <label for="confirm password"></label>
+            <input type="password" placeholder="Confirm Password" id="password" value=""  style="width: 95%;">
+            <br>
+            <br>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I accept the<span>Terms of Use</span>&<span>Privacy policy</span></label>
+            <br>
+            <br>
+            <br>
+            <button id="button" >Register Now</button>
+</form>
+    </div>
+    <h4>Already have an account?<u>Sign in</u></h4>
+</body>
+</html>
